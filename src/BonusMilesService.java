@@ -1,12 +1,12 @@
 public class BonusMilesService {
-    public int calculate (int x) {
-        int price;
-        if (x > 0) {
-            price = x / 20;
+    public int calculate(int price) {
+        int miles;                 // переменная мили
+        if (price > 0) {           // если сумма покупки больше 0
+            miles = price / 20;
         } else {
 
-        price =0;
+            miles = 0;
         }
-        return price;
+        return miles;            // передача бонусных миль
     }
 }
